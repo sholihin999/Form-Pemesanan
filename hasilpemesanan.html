@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasil Pemesanan</title>
+</head>
+
+<!--Body-->
+
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0;">
+    <div style="width: 100%; margin: 20px auto; background-color: white; padding: 20px; border: 1px solid black;">
+
+        <!--Navbar-->
+        <div
+            style="display: flex; justify-content: space-around; background-color: white ; padding: 10px; border: 1px solid black;">
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Home
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Register
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Policy
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                About
+            </a>
+        </div>
+        <!--End Navbar-->
+
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+            <!--Picture-->
+            <div style="width: 60%; display: flex; flex-direction: column; align-items: center;">
+                <img src="placeholder.png" alt="Foto Produk" style="border: 1px  solid black; width: 200px;" />
+            </div>
+            <!--End Picture-->
+
+            <!--Output Data Pemesanan-->
+            <div style="width: 100%;">
+                <form action="" method="post">
+                    <div style="display: flex; align-items: center; margin-bottom: 1px;">
+                        <label style="width: 28%;" for="title">
+                            Title Here   :
+                        </label>
+                        <p > MacBook Air</p>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 3px;">
+                        <label style="width: 28%;" for="desc">
+                            Description :
+                        </label>
+                        <p> Year : 2022 <br> Model :  <br> Condition : Mint</p>
+
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 3px;">
+                        <label style="width: 28%;" for="">
+                            Total Amount :
+                        </label>
+                        <p>£800</p>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 3px;">
+                        <label style="width: 28%;" for="">
+                            Pay To :
+                        </label>
+                        <p>123-456-789-0</p>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;">
+                            Payment Type :
+                        </label>
+                        <select style="width: 50%; padding: 5px; border: 1px solid black;" name="bank">
+                            <option>Visa Debit</option>
+                            <option>Kredit</option>
+                            <option>Trasnfer</option>
+                            <option>E-walet</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="achol">
+                            Account Holder :
+                        </label>
+                        <input style="width: 50%; padding: 5px; border: 1px solid black ;" type="text" name="achol"
+                            id="achol" placeholder="Name here" value="Name here" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="achol">
+                            Account No :
+                        </label>
+                        <input style="width: 50%; padding: 5px; border: 1px solid black ;" type="text" name="achol"
+                            id="achol" placeholder="" value="123-456-789-0" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="count">
+                            Transaction :
+                        </label>
+                        <input style="width: 10%; padding: 5px; border: 1px solid black ;" type="number" name="count"
+                            id="count" min="1" max="10" value="1" />
+                    </div>
+                    <div style="margin-left: 25%;">
+                        <p>
+                            * if the transaction is for 3 person, choose 3 from the drop-down list
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 10px; margin-left:27%;">
+                        <input type="checkbox" checked="" />
+                        <label style="margin-right: 20px;">
+                            Send to Mobile Phone
+                        </label>
+                        <br>
+                        <input type="checkbox" checked="" />
+                        <label>
+                            Send to Email
+                        </label>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="phone">
+                            Send to Mobile Phone :
+                        </label>
+                        <input style="width: 72%; padding: 5px; border: 1px solid black;" type="tel" name="phone"
+                            id="phone" minlength="11" maxlength="15" value="1234654876" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="email">
+                            Send to Email :
+                        </label>
+                        <input style="width: 72%; padding: 5px; border: 1px solid black;" type="email" name="email"
+                            id="email" value="wawawww@gmail.com" />
+
+
+                    </div>
+                    <br>
+                    <div>
+                        <input
+                            style="width: 30%; margin-left:10%; padding: 5px; background-color: #4CAF50; color: white; border: 1 px solid black;"
+                            type="submit" name="submit-button" id="submit-button" value="Pay Using QuidLink">
+                    </div>
+                </form>
+            </div>
+            <!--End Output Data Pemesanan-->
+
+        </div>
+    </div>
+</body>
+<!--End Body-->
+
+</html>

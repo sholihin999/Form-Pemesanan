@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan</title>
+</head>
+
+<!--Body-->
+
+<body style="font-family: Arial, sans-serif; background-color: #f2f2f2; margin: 0; padding: 0;">
+    <div style="width: 100%; margin: 20px auto; background-color: white; padding: 20px; border: 1px solid black;">
+
+        <!--Navbar-->
+        <div
+            style="display: flex; justify-content: space-around; background-color: white ; padding: 10px; border: 1px solid black;">
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Home
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Generate Link
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Transaction History
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Policy
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                |
+            </a>
+            <a href="#" style="text-decoration: none; color: black; font-weight: bold;">
+                Logout
+            </a>
+        </div>
+        <!--End Navbar-->
+
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+
+            <!--Upload Picture-->
+            <div style="width: 60%; display: flex; flex-direction: column; align-items: flex-start;">
+                <img src="placeholder.png" alt="Foto Produk" style="border: 1px  solid black; width: 200px;" />
+                <br>
+                <input style="width: 25%; padding: 2px; background-color: white; border: 1 px solid black;"
+                    type="submit" name="upload" id="upload" value="Upload Picture">
+            </div>
+            <!--End Upload Picture-->
+
+            <!--Input Data Pemesanan-->
+            <div style="width: 100%;">
+                <form action="" method="post">
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="title">
+                            Title Here :
+                        </label>
+                        <input style="width: 72% ; padding: 5px; border: 1px solid black ;" type="text"
+                            placeholder="MacBook Air £800" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="desc">
+                            Description :
+                        </label>
+                        <textarea style="width: 72%; height:auto; border: 1px solid black; height:60px;"
+                            placeholder="Year:2022  Model:  Condition:Mint "></textarea>
+
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="acnumb">
+                            Account Number :
+                        </label>
+                        <input style="width: 50%; padding: 5px; border: 1px solid black ;" type="tel" name="acnumb"
+                            id="acnumb" minlength="11" maxlength="15" placeholder="123-456-789-0" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;">
+                            Bank :
+                        </label>
+                        <select style="width: 50%; padding: 5px; border: 1px solid black;" name="bank">
+                            <option>HSBC</option>
+                            <option>BCA</option>
+                            <option>BRI</option>
+                            <option>Danamon</option>
+                        </select>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="achol">
+                            Account Holder :
+                        </label>
+                        <input style="width: 50%; padding: 5px; border: 1px solid black ;" type="text" name="achol"
+                            id="achol" placeholder="Name here" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="count">
+                            Transaction :
+                        </label>
+                        <input style="width: 10%; padding: 5px; border: 1px solid black ;" type="number" name="count"
+                            id="count" min="1" max="10" placeholder="1" />
+                    </div>
+                    <div style="margin-left: 25%;">
+                        <p>
+                            * if the transaction is for 3 person, choose 3 from the drop-down list
+                        </p>
+                    </div>
+                    <div style="margin-bottom: 10px; margin-left:27%;">
+                        <input type="checkbox" />
+                        <label style="margin-right: 20px;">
+                            Send to Mobile Phone
+                        </label>
+                        <br>
+                        <input type="checkbox" />
+                        <label>
+                            Send to Email
+                        </label>
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="phone">
+                            Send to Mobile Phone :
+                        </label>
+                        <input style="width: 72%; padding: 5px; border: 1px solid black;" type="tel" name="phone"
+                            id="phone" minlength="11" maxlength="15" placeholder="1234654876" />
+                    </div>
+                    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+                        <label style="width: 28%;" for="email">
+                            Send to Email :
+                        </label>
+                        <input style="width: 72%; padding: 5px; border: 1px solid black;" type="email" name="email"
+                            id="email" placeholder="wawawww@gmail.com" />
+
+
+                    </div>
+                    <br>
+                    <div>
+                        <input
+                            style="width: 30%; margin-left:28%; padding: 5px; background-color: #4CAF50; color: white; border: 1 px solid black;"
+                            type="submit" name="submit-button" id="submit-button" value="Generate Nabr Link">
+                    </div>
+                </form>
+            </div>
+            <!--End Input Data-->
+
+        </div>
+    </div>
+</body>
+<!--End Body-->
+
+</html>
